@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title> Signup Form</title> 
+  <style>
+  .main{ 
+	padding:20px; 
+	font-family: 'Helvetica', serif; 
+	box-shadow: 5px 5px 7px 5px #888888; 
+	
+} 
+.main h1{ 
+	font-size: 40px; 
+	text-align:center; 
+	font-family: 'Helvetica', serif; 
+	
+} 
+input{ 
+	font-family: 'Helvetica', serif; 
+	width: 100%; 
+	font-size: 20px; 
+	padding: 12px 20px; 
+	margin: 8px 0; 
+	border: none; 
+	border-bottom: 2px solid #767474; 
+} 
+input[type=submit] { 
+	font-family: 'Helvetica', serif; 
+	width: 100%; 
+	background-color: #8d6363; 
+	border: none; 
+	color: white; 
+	padding: 16px 32px; 
+	margin: 4px 2px; 
+	border-radius: 10px; 
+} 
+  </style>
+  
+		<!---<link rel="" href="js/valid.js">-->
+		<!-----<link rel="stylesheet" type="text/css" href="./public/css/style.css">---->
+<link rel="stylesheet"
+href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity= 
+"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">	 
+		
+
+		
+</head> 
+<body> 
+	
+	<br> 
+	<br> 
+	<br> 
+	<div class="container" > 
+		<div class="row"> 
+		<div class="col-md-3"> 
+					
+		</div> 
+				
+		<div class="col-md-6 main"> 
+					
+			<form name="signup-form"> 
+					
+			<h1> Signup form </h1> 
+							
+			<input class="box" type="text" name="name" id="name"
+			placeholder="Name" required /><br> 
+							
+			<input class="box" type="email" name="email" id="email"
+			placeholder="E-Mail " required /><br> 
+							
+			<input class="box" type="password" name="password"
+			id="password" placeholder="Password " minlength=6 required  /><br> 
+
+			<input class="box" type="text" name="utype" id="utype"
+			placeholder="user type organisation/user" required/><br>
+							
+			<input class="box" type="text" name="phone" id="phone"
+			placeholder="Phone Number " required/><br> 
+						<br> 
+			<input type="submit" id="submitDetails"
+            name="submitDetails" value="Submit" required /><br> 
+            <p></p>
+					
+			</form> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="/js/chat.js"></script>
+		</div> 
+				
+				
+		<div class="col-md-3"> 
+		</div> 
+				
+	</div> 
+	</div> 
+</body> 
+</html>	 
